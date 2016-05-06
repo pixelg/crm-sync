@@ -66,7 +66,7 @@ var zohoSync = function(){
 		postReservations: function(pool, options, processDoneCallback){
 			// Post the reservation data that hasn't been sync'd. This ends the chain.
 			console.log(new Date() + ' - Attempting POST: ' + reservationModel.getModuleName());
-			triggerRules = "&wfTrigger=true";
+			var triggerRules = "&wfTrigger=true";
 			options = (options ? options += triggerRules : triggerRules);
 			zohoSync.prepareAPIPost(pool, reservationModel, options, function(apiPostError){
 				if (apiPostError){
