@@ -1,0 +1,16 @@
+var settings = {
+	production: {
+		db_user: '',
+		db_pass: '',
+		database: '',
+		api_auth_token: ''
+	},
+	testing: {
+		db_user: '',
+		db_pass: '',
+		database: '',
+		api_auth_token: ''
+	}
+};
+
+module.exports = settings;

@@ -1,0 +1,5 @@
+/.vscode/
+/.svn/
+/node_modules/
+*.sublime*
+/app/settings.js

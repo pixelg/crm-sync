@@ -1,0 +1,23 @@
+{
+  "name": "crm-sync",
+  "version": "1.0.0",
+  "description": "Sync OTE with CRM.",
+  "main": "./app/main.js",
+  "scripts": {
+    "main": "node ./app/main.js",
+    "debug": "node-debug ./app/main.js",
+    "test": "mocha test/GuestTest test/PropertyTest test/ReservationTest",
+    "server": "node ./server/ssl-server.js"
+  },
+  "author": "Brent Lee",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.0",
+    "mysql": "^2.9.0",
+    "xml2js": "^0.4.13",
+    "xmlbuilder": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0"
+  }
+}
